@@ -1,0 +1,24 @@
+{
+  "name": "GPT to Butt",
+  "description": "ChatBUTT it all the rage these days!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "scripting"
+  ],
+  "action": {
+    "default_icon": "gpt.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "gpt.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
